@@ -14,6 +14,7 @@ def calcular():
     m = int(a.get())* int(b.get())
     pa = int(a.get())**2
     pb = int(b.get())**2
+    mod = int(a.get())% int(b.get())
     t_resultados.insert(INSERT, f"{a.get()} + {b.get()} = {s}\n")
 
     t_resultados.insert(INSERT, f"{a.get()} - {b.get()} = {r}\n")
@@ -25,6 +26,8 @@ def calcular():
     t_resultados.insert(INSERT, f"{a.get()} **2= {pa}\n")
 
     t_resultados.insert(INSERT, f"{b.get()} **2= {pb}\n")
+
+    t_resultados.insert(INSERT, f"{a.get()} % {b.get()} = {mod}\n")
 
 
 def borrar():
